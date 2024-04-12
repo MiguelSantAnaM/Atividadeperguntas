@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritimética</title>
+    <script>
+        function media(){
+            var n1 = document.querySelectorAll('input') [0].value;
+            var n2 = document.querySelectorAll('input') [1].value;
+            var n3 = document.querySelectorAll('input') [2].value;
+            var media = (parseFloat(n1) + parseFloat(n2) + parseFloat(n3))/3
+            alert(media)
+        }
+        </script>
+<body>
+    
+    <p>
+  <input type="number" placeholder="Insira o primeiro valor" name="n1" id="n1">
+  <input type="number" placeholder="Insira o segundo valor"name="n2" id="n2">  
+  <input type="number" placeholder="Insira o terceiro valor valor"name="n3" id="n3">
+  <input type="submit" value="Média" onclick="media()">
+</p>
+
+</body>
+</html>

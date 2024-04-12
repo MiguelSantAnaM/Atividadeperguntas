@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA PONDERADA</title>
+</head>
+<body>
+    <input type="number" placeholder="Insira um número1" name="n1" id="n1">
+    <input type="number" placeholder="Insira seu peso1" name="p1" id="p1">
+    <input type="number" placeholder="Insira um número2" name="n2" id="n2">
+    <input type="number" placeholder="Insira seu peso2" name="p2" id="p2">
+    <input type="number" placeholder="Insira um número3" name="n3" id="n3">
+    <input type="number" placeholder="Insira seu peso3" name="p3" id="p3">
+    <input type="submit" value="Média" onclick="media()">
+
+    <script>
+        function media(){
+            var n1 = document.querySelectorAll ('input')[0].value
+            var p1 = document.querySelectorAll ('input')[1].value
+            var n2 = document.querySelectorAll ('input')[2].value
+            var p2 = document.querySelectorAll ('input')[3].value
+            var n3 = document.querySelectorAll ('input')[4].value
+            var p3 = document.querySelectorAll ('input')[5].value
+            var media = ((parseInt(n1)*parseInt(p1))+(parseInt(n2)*parseInt(p2))+(parseInt(n3)*parseInt(p3)))/ (parseInt(p1) + parseInt(p2) + parseInt(p3))
+            alert(media)
+        }
+    </script>
+</body>
+</html>

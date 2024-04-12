@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+
+</head>
+<body>
+
+    <input type="number" placeholder="Altura(ex:1,70 metros)" name="alt" id="alt">
+    <input type="number" placeholder="Peso(kg)" name="peso" id="peso">
+    <input type="submit" value="Calculo IMC" onclick="imc()">
+
+    <script>
+        function imc(){
+            var altura = document.querySelectorAll ('input')[0].value
+            var peso = document.querySelectorAll ('input')[1].value
+            var calc = parseFloat(peso)/(parseFloat(altura)** 2)
+            if (calc<18.5)
+            alert('Magreza')
+            if (calc >= 18.5 && calc <= 24.9)
+            alert('Normal')
+            if (calc >= 25 && calc <= 29.9)
+            alert('Sobrepeso')
+            if (calc >= 30 && calc <= 39.9)
+            alert('Obesidade')
+            if(calc>=40)
+            alert('Obesidade Grave!')
+        }
+    </script>
+</body>
+</html>
